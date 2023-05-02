@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.APIs.informacionPaciente</title>
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-04-27 03:51:22 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>probando</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/APIs/informacionPaciente.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Obtener informacion del paciente</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">probando</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2369</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def security_class = Java.type(&#39;security&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = security_class.encryptMD5(&quot;Hellow wold&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">15:51:19.737 [print] 8d5e037a9583f8c217f762876d15afe06ccb6c44 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def encryptedText = Java.type(&#39;security&#39;)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* header Authorization = &#39;FSB:&#39;+ payload</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;FSB:7a5703f72771816988bc836b65074bafb51d4f66&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request { &quot;paciente&quot;: { &quot;tipo_documento&quot;: &quot;4&quot;, &quot;numero_documento&quot;: &quot;3183856&quot; }, &quot;timestamp&quot;: &quot;1682628285&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">35</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2290</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">15:51:20.080 request:
+1 &gt; POST https://fsfb.azure-api.net/agendamiento/informacion-paciente
+1 &gt; Authorization: FSB:7a5703f72771816988bc836b65074bafb51d4f66
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 89
+1 &gt; Host: fsfb.azure-api.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;paciente&quot;:{&quot;tipo_documento&quot;:&quot;4&quot;,&quot;numero_documento&quot;:&quot;3183856&quot;},&quot;timestamp&quot;:&quot;1682628285&quot;}
+
+15:51:22.062 response time in milliseconds: 1979
+1 &lt; 200
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Content-Length: 780
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Expires: -1
+1 &lt; X-AspNet-Version: 4.0.30319
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Date: Thu, 27 Apr 2023 20:51:52 GMT
+{&quot;codigo&quot;:462450,&quot;numero_documento&quot;:&quot;3183856&quot;,&quot;tipo_documento&quot;:{&quot;codigo&quot;:&quot;4&quot;,&quot;detalle&quot;:&quot;CEDULA DE CIUDADANIA&quot;},&quot;apellido&quot;:&quot;OÑORO&quot;,&quot;segundo_apellido&quot;:&quot;MARTINEZ&quot;,&quot;nombre&quot;:&quot;EDGARDO RAFAEL&quot;,&quot;direccion&quot;:&quot;CRA  1 ESTE NO 78 06  APTO  501&quot;,&quot;telefono&quot;:null,&quot;celular&quot;:&quot;3112548231&quot;,&quot;email&quot;:&quot;EDGARDOONORO@GMAIL.COM&quot;,&quot;sexo&quot;:&quot;M&quot;,&quot;profesion&quot;:&quot;BW&quot;,&quot;religion&quot;:null,&quot;ocupacion&quot;:&quot;INGENIERO INDUSTRIAL&quot;,&quot;estado_civil&quot;:&quot;CASADO(A)&quot;,&quot;convenio&quot;:{&quot;codigo&quot;:&quot;292&quot;,&quot;detalle&quot;:&quot;AXA COLPATRIA MEDICINA PREPAGADA S.A -PO&quot;},&quot;grupo_poblacional&quot;:{&quot;codigo&quot;:36,&quot;nobmre&quot;:&quot;NO DEFINIDO&quot;},&quot;grupo_etnico&quot;:{&quot;codigo&quot;:6,&quot;detalle&quot;:&quot;NINGUNO DE LOS ANTERIORES&quot;},&quot;fecha_nacimiento&quot;:&quot;13-09-1958&quot;,&quot;pais_nacimiento&quot;:&quot;COLOMBIA&quot;,&quot;ciudad_nacimiento&quot;:null,&quot;datos_personales&quot;:&quot;S&quot;,&quot;categoria&quot;:&quot;A&quot;,&quot;tipo_afiliado&quot;:&quot;NA&quot;,&quot;habeas_data&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

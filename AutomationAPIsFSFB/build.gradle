@@ -1,0 +1,30 @@
+//Se trae el pluggin de java por si se necesita robustecer las pruebas
+plugins {
+    id 'java'
+}
+//utilizamos el repositorio central de maven para descargar las dependencias
+repositories {
+    maven{
+        url "https://repo.maven.apache.org/maven2"
+    }
+}
+//Traemos la dependencia de Karate
+dependencies {
+    testImplementation 'com.intuit.karate:karate-junit5:1.2.0.RC5'
+    testImplementation 'net.masterthought:cucumber-reporting:5.7.0'
+   // implementation 'org.webjars:cryptojs:3.1.2'
+
+}
+//Se implementa la plataforma de JUnit en nuestras pruebas
+test{
+    useJUnitPlatform()
+}
+//Se configura la ruta de ejecucion del set de pruebas
+sourceSets{
+    test{
+        resources{
+            srcDir file('src/test/java')
+            //exclude '**/*.java'
+        }
+    }
+}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("a3d729d1-79f0-435b-837f-ebee719da01b",{name:"juanortega"});
+    posthog.capture("report_feature",{karate_version:"1.4.0.RC1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.APIs.informacionPaciente</title>
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-04-26 05:00:02 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>probando</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/APIs/informacionPaciente.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Obtener informacion del paciente</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">probando</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">17:00:02.876 src/test/java/APIs/informacionPaciente.feature:3
+* url baseURL
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; unexpected &#39;configure&#39; key: &#39;security&#39;
+js failed:
+&gt;&gt;&gt;&gt;
+01: 
+02: 
+03: function fn(){
+04: //var encrypted = CryptoJS.AES.encrypt(&quot;Hola mundo&quot;, &quot;secret-key&quot;);
+05: 
+06:     var config = {
+07:         baseURL : &#39;https://fsfb.azure-api.net/agendamiento/informacion-paciente&#39;,
+08:         privateKey : &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;,
+09:         timestamp : Math.round(new Date().getTime() / 1000),
+10:         tipo_documento : &quot;4&quot;,
+11:         numero_documento : &quot;1026278527&quot;,
+12:         //md5 : CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey),
+13:         //md5 : CryptoJS.AES.encrypt(&quot;hola mundo&quot;,&quot;secret-key&quot;),
+14:         //md5 : encrypted.toString(),
+15:         //payload : CryptoJS.SHA1(md5 + &quot;&quot;)
+16: 
+17:     };
+18:     //karate.log(encrypted.toString());
+19:     //karate.configure(&#39;java.security&#39;, {allowAllAccess: true});
+20:     karate.configure(&#39;security&#39;, { allow: [&#39;security&#39;] });
+21:     karate.configure(&#39;connectTimeout&#39;, 5000);
+22:     karate.configure(&#39;readTimeout&#39;, 5000);
+23:     return config;
+24: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: unexpected &#39;configure&#39; key: &#39;security&#39;
+- com.intuit.karate.core.Config.configure(Config.java:299)
+- com.intuit.karate.core.ScenarioEngine.configure(ScenarioEngine.java:340)
+- com.intuit.karate.core.ScenarioBridge.configure(ScenarioBridge.java:297)
+- &lt;js&gt;.fn(Unnamed:20)
+
+src/test/java/APIs/informacionPaciente.feature:3
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#*  def Encryptor = new security()</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def encryptedText = Java.type(&#39;security&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">17:00:02.876 src/test/java/APIs/informacionPaciente.feature:5
+* def encryptedText = Java.type(&#39;security&#39;)
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; unexpected &#39;configure&#39; key: &#39;security&#39;
+js failed:
+&gt;&gt;&gt;&gt;
+01: 
+02: 
+03: function fn(){
+04: //var encrypted = CryptoJS.AES.encrypt(&quot;Hola mundo&quot;, &quot;secret-key&quot;);
+05: 
+06:     var config = {
+07:         baseURL : &#39;https://fsfb.azure-api.net/agendamiento/informacion-paciente&#39;,
+08:         privateKey : &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;,
+09:         timestamp : Math.round(new Date().getTime() / 1000),
+10:         tipo_documento : &quot;4&quot;,
+11:         numero_documento : &quot;1026278527&quot;,
+12:         //md5 : CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey),
+13:         //md5 : CryptoJS.AES.encrypt(&quot;hola mundo&quot;,&quot;secret-key&quot;),
+14:         //md5 : encrypted.toString(),
+15:         //payload : CryptoJS.SHA1(md5 + &quot;&quot;)
+16: 
+17:     };
+18:     //karate.log(encrypted.toString());
+19:     //karate.configure(&#39;java.security&#39;, {allowAllAccess: true});
+20:     karate.configure(&#39;security&#39;, { allow: [&#39;security&#39;] });
+21:     karate.configure(&#39;connectTimeout&#39;, 5000);
+22:     karate.configure(&#39;readTimeout&#39;, 5000);
+23:     return config;
+24: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: unexpected &#39;configure&#39; key: &#39;security&#39;
+- com.intuit.karate.core.Config.configure(Config.java:299)
+- com.intuit.karate.core.ScenarioEngine.configure(ScenarioEngine.java:340)
+- com.intuit.karate.core.ScenarioBridge.configure(ScenarioBridge.java:297)
+- &lt;js&gt;.fn(Unnamed:20)
+
+src/test/java/APIs/informacionPaciente.feature:3
+src/test/java/APIs/informacionPaciente.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>def md5 = new encryptedText()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">17:00:02.876 src/test/java/APIs/informacionPaciente.feature:10
+Given def md5 = new encryptedText()
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; unexpected &#39;configure&#39; key: &#39;security&#39;
+js failed:
+&gt;&gt;&gt;&gt;
+01: 
+02: 
+03: function fn(){
+04: //var encrypted = CryptoJS.AES.encrypt(&quot;Hola mundo&quot;, &quot;secret-key&quot;);
+05: 
+06:     var config = {
+07:         baseURL : &#39;https://fsfb.azure-api.net/agendamiento/informacion-paciente&#39;,
+08:         privateKey : &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;,
+09:         timestamp : Math.round(new Date().getTime() / 1000),
+10:         tipo_documento : &quot;4&quot;,
+11:         numero_documento : &quot;1026278527&quot;,
+12:         //md5 : CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey),
+13:         //md5 : CryptoJS.AES.encrypt(&quot;hola mundo&quot;,&quot;secret-key&quot;),
+14:         //md5 : encrypted.toString(),
+15:         //payload : CryptoJS.SHA1(md5 + &quot;&quot;)
+16: 
+17:     };
+18:     //karate.log(encrypted.toString());
+19:     //karate.configure(&#39;java.security&#39;, {allowAllAccess: true});
+20:     karate.configure(&#39;security&#39;, { allow: [&#39;security&#39;] });
+21:     karate.configure(&#39;connectTimeout&#39;, 5000);
+22:     karate.configure(&#39;readTimeout&#39;, 5000);
+23:     return config;
+24: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: unexpected &#39;configure&#39; key: &#39;security&#39;
+- com.intuit.karate.core.Config.configure(Config.java:299)
+- com.intuit.karate.core.ScenarioEngine.configure(ScenarioEngine.java:340)
+- com.intuit.karate.core.ScenarioBridge.configure(ScenarioBridge.java:297)
+- &lt;js&gt;.fn(Unnamed:20)
+
+src/test/java/APIs/informacionPaciente.feature:3
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>def resultado = md5.encrypt(&quot;akskks&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">17:00:02.877 src/test/java/APIs/informacionPaciente.feature:11
+When def resultado = md5.encrypt(&quot;akskks&quot;)
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; unexpected &#39;configure&#39; key: &#39;security&#39;
+js failed:
+&gt;&gt;&gt;&gt;
+01: 
+02: 
+03: function fn(){
+04: //var encrypted = CryptoJS.AES.encrypt(&quot;Hola mundo&quot;, &quot;secret-key&quot;);
+05: 
+06:     var config = {
+07:         baseURL : &#39;https://fsfb.azure-api.net/agendamiento/informacion-paciente&#39;,
+08:         privateKey : &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;,
+09:         timestamp : Math.round(new Date().getTime() / 1000),
+10:         tipo_documento : &quot;4&quot;,
+11:         numero_documento : &quot;1026278527&quot;,
+12:         //md5 : CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey),
+13:         //md5 : CryptoJS.AES.encrypt(&quot;hola mundo&quot;,&quot;secret-key&quot;),
+14:         //md5 : encrypted.toString(),
+15:         //payload : CryptoJS.SHA1(md5 + &quot;&quot;)
+16: 
+17:     };
+18:     //karate.log(encrypted.toString());
+19:     //karate.configure(&#39;java.security&#39;, {allowAllAccess: true});
+20:     karate.configure(&#39;security&#39;, { allow: [&#39;security&#39;] });
+21:     karate.configure(&#39;connectTimeout&#39;, 5000);
+22:     karate.configure(&#39;readTimeout&#39;, 5000);
+23:     return config;
+24: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: unexpected &#39;configure&#39; key: &#39;security&#39;
+- com.intuit.karate.core.Config.configure(Config.java:299)
+- com.intuit.karate.core.ScenarioEngine.configure(ScenarioEngine.java:340)
+- com.intuit.karate.core.ScenarioBridge.configure(ScenarioBridge.java:297)
+- &lt;js&gt;.fn(Unnamed:20)
+
+src/test/java/APIs/informacionPaciente.feature:3
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:10
+src/test/java/APIs/informacionPaciente.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>print resultado</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">17:00:02.877 src/test/java/APIs/informacionPaciente.feature:12
+Then print resultado
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; unexpected &#39;configure&#39; key: &#39;security&#39;
+js failed:
+&gt;&gt;&gt;&gt;
+01: 
+02: 
+03: function fn(){
+04: //var encrypted = CryptoJS.AES.encrypt(&quot;Hola mundo&quot;, &quot;secret-key&quot;);
+05: 
+06:     var config = {
+07:         baseURL : &#39;https://fsfb.azure-api.net/agendamiento/informacion-paciente&#39;,
+08:         privateKey : &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;,
+09:         timestamp : Math.round(new Date().getTime() / 1000),
+10:         tipo_documento : &quot;4&quot;,
+11:         numero_documento : &quot;1026278527&quot;,
+12:         //md5 : CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey),
+13:         //md5 : CryptoJS.AES.encrypt(&quot;hola mundo&quot;,&quot;secret-key&quot;),
+14:         //md5 : encrypted.toString(),
+15:         //payload : CryptoJS.SHA1(md5 + &quot;&quot;)
+16: 
+17:     };
+18:     //karate.log(encrypted.toString());
+19:     //karate.configure(&#39;java.security&#39;, {allowAllAccess: true});
+20:     karate.configure(&#39;security&#39;, { allow: [&#39;security&#39;] });
+21:     karate.configure(&#39;connectTimeout&#39;, 5000);
+22:     karate.configure(&#39;readTimeout&#39;, 5000);
+23:     return config;
+24: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: unexpected &#39;configure&#39; key: &#39;security&#39;
+- com.intuit.karate.core.Config.configure(Config.java:299)
+- com.intuit.karate.core.ScenarioEngine.configure(ScenarioEngine.java:340)
+- com.intuit.karate.core.ScenarioBridge.configure(ScenarioBridge.java:297)
+- &lt;js&gt;.fn(Unnamed:20)
+
+src/test/java/APIs/informacionPaciente.feature:3
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:10
+src/test/java/APIs/informacionPaciente.feature:11
+src/test/java/APIs/informacionPaciente.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

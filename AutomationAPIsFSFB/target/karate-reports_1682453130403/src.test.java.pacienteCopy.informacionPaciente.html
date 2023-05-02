@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.APIs.informacionPaciente</title>
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-04-25 03:05:00 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[2:15]"><span>[2:15]</span> <span>probado en regres</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/APIs/informacionPaciente.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Obtener informacion del paciente</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:15]</span>
+                <span class="scenario-name">probado en regres</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># * call read(&quot;../karate-config.js&quot;)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>configure base = karate.properties[&#39;baseURL&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:05:00.870 src/test/java/APIs/informacionPaciente.feature:4
+* configure base = karate.properties[&#39;baseURL&#39;]
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:15
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>header Authorization=&quot;FSB:{{payload}}&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">15:05:00.871 src/test/java/APIs/informacionPaciente.feature:5
+* header Authorization=&quot;FSB:{{payload}}&quot;
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:15
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:4
+src/test/java/APIs/informacionPaciente.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>header Content-Type=&quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">15:05:00.871 src/test/java/APIs/informacionPaciente.feature:6
+* header Content-Type=&quot;application/json&quot;
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:15
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:4
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &quot;/api/users/2&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">15:05:00.872 src/test/java/APIs/informacionPaciente.feature:16
+Given path &quot;/api/users/2&quot;
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:15
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:4
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:6
+src/test/java/APIs/informacionPaciente.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">15:05:00.872 src/test/java/APIs/informacionPaciente.feature:17
+When method post
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:15
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:4
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:6
+src/test/java/APIs/informacionPaciente.feature:16
+src/test/java/APIs/informacionPaciente.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">15:05:00.873 src/test/java/APIs/informacionPaciente.feature:18
+Then status 200
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:15
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn(){
+02: var config ={
+03:     baseURL : &#39;https://regres.in/api&#39;
+04: }
+05: 
+06: }
+07: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+08: var timestamp = Math.round(new Date().getTime() / 1000);
+09: // Document Types
+10: //CC =&gt; 4
+11: //TI =&gt; 3
+12: //PS =&gt; P
+13: //CE =&gt; 5
+14: //RC =&gt; 2
+15: //SI =&gt; A
+16: //CD =&gt; D
+17: //MI =&gt; M
+18: //NI =&gt; 6
+19: //NU =&gt; N
+20: //SC =&gt; S
+21: //SN =&gt; A
+22: 
+23: var tipo_documento = &quot;4&quot;;
+24: var numero_documento = &quot;1026278527&quot;;
+25: 
+26: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+27: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+28: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+29: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:0 Expected ) but found var
+var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+^
+Unnamed:29:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:4
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:6
+src/test/java/APIs/informacionPaciente.feature:16
+src/test/java/APIs/informacionPaciente.feature:17
+src/test/java/APIs/informacionPaciente.feature:18
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.APIs.informacionPaciente</title>
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-04-25 02:56:09 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>informacion del paciente</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/APIs/informacionPaciente.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Obtener informacion del paciente</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">informacion del paciente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>call read(&quot;../karate-config.js&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">14:56:09.674 src/test/java/APIs/informacionPaciente.feature:3
+* call read(&quot;../karate-config.js&quot;)
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:3
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>header Authorization=&quot;FSB:{{payload}}&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">14:56:09.675 src/test/java/APIs/informacionPaciente.feature:4
+* header Authorization=&quot;FSB:{{payload}}&quot;
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:3
+src/test/java/APIs/informacionPaciente.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>header Content-Type=&quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">14:56:09.676 src/test/java/APIs/informacionPaciente.feature:5
+* header Content-Type=&quot;application/json&quot;
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:3
+src/test/java/APIs/informacionPaciente.feature:4
+src/test/java/APIs/informacionPaciente.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def tipo_documento = &quot;123&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">14:56:09.677 src/test/java/APIs/informacionPaciente.feature:8
+* def tipo_documento = &quot;123&quot;
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:3
+src/test/java/APIs/informacionPaciente.feature:4
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def numero_documento = &quot;123&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">14:56:09.678 src/test/java/APIs/informacionPaciente.feature:9
+* def numero_documento = &quot;123&quot;
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:3
+src/test/java/APIs/informacionPaciente.feature:4
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:8
+src/test/java/APIs/informacionPaciente.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;https://fsfb.azure-api.net/agendamiento/informacion-paciente&#39;+Authorization+Content-Type</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">14:56:09.679 src/test/java/APIs/informacionPaciente.feature:10
+Given url &#39;https://fsfb.azure-api.net/agendamiento/informacion-paciente&#39;+Authorization+Content-Type
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:3
+src/test/java/APIs/informacionPaciente.feature:4
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:8
+src/test/java/APIs/informacionPaciente.feature:9
+src/test/java/APIs/informacionPaciente.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>request &quot;paciente&quot;: {&quot;tipo_documento&quot;: &quot;#(tipo_documento)&quot;,&quot;numero_documento&quot;: &quot;#(numero_documento)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">14:56:09.680 src/test/java/APIs/informacionPaciente.feature:11
+When request &quot;paciente&quot;: {&quot;tipo_documento&quot;: &quot;#(tipo_documento)&quot;,&quot;numero_documento&quot;: &quot;#(numero_documento)&quot;}
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:3
+src/test/java/APIs/informacionPaciente.feature:4
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:8
+src/test/java/APIs/informacionPaciente.feature:9
+src/test/java/APIs/informacionPaciente.feature:10
+src/test/java/APIs/informacionPaciente.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">14:56:09.681 src/test/java/APIs/informacionPaciente.feature:12
+Then status 200
+&gt;&gt; src/test/java/APIs/informacionPaciente.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+02: var timestamp = Math.round(new Date().getTime() / 1000);
+03: // Document Types
+04: //CC =&gt; 4
+05: //TI =&gt; 3
+06: //PS =&gt; P
+07: //CE =&gt; 5
+08: //RC =&gt; 2
+09: //SI =&gt; A
+10: //CD =&gt; D
+11: //MI =&gt; M
+12: //NI =&gt; 6
+13: //NU =&gt; N
+14: //SC =&gt; S
+15: //SN =&gt; A
+16: 
+17: var tipo_documento = &quot;4&quot;;
+18: var numero_documento = &quot;1026278527&quot;;
+19: 
+20: var md5 = CryptoJS.MD5(tipo_documento + &quot;~&quot; + numero_documento + &quot;~&quot; + timestamp + &quot;~&quot; + privateKey);
+21: var payload = CryptoJS.SHA1(md5 + &quot;&quot;);
+22: console.log(tipo_documento + &quot;&quot; + numero_documento + &quot;&quot; + timestamp + &quot;~&quot; + privateKey);
+23: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var privateKey = &quot;395e06b3-0c0b-47f2-a526-371691616f82&quot;;
+ ^
+Unnamed:23:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:233)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1342)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:300)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:384)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:410)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/APIs/informacionPaciente.feature:3
+src/test/java/APIs/informacionPaciente.feature:4
+src/test/java/APIs/informacionPaciente.feature:5
+src/test/java/APIs/informacionPaciente.feature:8
+src/test/java/APIs/informacionPaciente.feature:9
+src/test/java/APIs/informacionPaciente.feature:10
+src/test/java/APIs/informacionPaciente.feature:11
+src/test/java/APIs/informacionPaciente.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
